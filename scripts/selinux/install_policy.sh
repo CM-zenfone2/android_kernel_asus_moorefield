@@ -34,7 +34,7 @@ if [ ! -d /etc/selinux ]; then
 fi
 if [ ! -f /etc/selinux/config ]; then
 	cat > /etc/selinux/config << EOF
-SELINUX=enforcing
+SELINUX=permissive
 SELINUXTYPE=dummy
 EOF
 else
